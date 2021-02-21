@@ -1,0 +1,76 @@
+@font-face {
+    font-family:'abplast';/*تعریف یک نام برای فونت*/
+    src:url('../fonts/Yekan.eot');/*اکسپلورر 9 به بعد*/
+    src:
+        url('../fonts/Yekan.eot?#iefix') format('embedded-opentype'),/*هک برای اکسپلورر 8 و ماقبل*/
+        url('../fonts/Yekan.woff') format('woff'),/*مرورگر های جدید*/
+        url('../fonts/Yekan.ttf') format('truetype'),/*تمام مرورگرها به جزء اکسپلورر*/
+        url('../fonts/Yekan.svg#yekan') format('svg');/*نسخه های قدیمی سیستم عامل iOS*/
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family: 'vazir';
+    src: url("../fonts/vazir/Farsi-Digits/Vazir-Medium-FD.woff");
+}
+body , html{
+    font-family: 'abplast', 'vazir', serif ;
+    height: 100vh;
+
+}
+
+.pointer-hover{
+    color: white !important;
+    cursor: pointer;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: red;
+    cursor: pointer;
+    display: block;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-xs{
+    padding: 0.20rem 0.2rem;
+    font-size: 0.585rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+.filter-option{
+    text-align: right !important;
+}
+.factory{
+    display: none;
+}
+#tag_box{
+    display: flex;
+    position: relative;
+}
+#tag_box span{
+    color: tomato;
+    margin-left: 7px;
+    cursor: pointer;
+}
+.tag_div{
+    margin-left: 5px;
+    font-size: 12px;
+    background: #ccc;
+    padding: 3px 8px 5px 8px;
+    border-radius: 6px;
+    width: fit-content;
+    color: black;
+}
+.btn-light{
+    background-color: #e0e2e8;
+}
